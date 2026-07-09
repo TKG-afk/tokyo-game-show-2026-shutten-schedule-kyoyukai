@@ -156,6 +156,67 @@ h2 {
   line-height: 1.18;
 }
 
+.resource-slide h2 {
+  margin-bottom: 28px;
+}
+
+.resource-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.resource-list a {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 22px;
+  align-items: center;
+  min-height: 118px;
+  padding: 18px 24px;
+  border: 3px solid var(--black);
+  border-left: 14px solid var(--red);
+  border-radius: 8px;
+  color: var(--black);
+  background: var(--white);
+  text-decoration: none;
+}
+
+.resource-list a:hover {
+  background: #fff5f5;
+}
+
+.resource-list span {
+  grid-row: 1 / span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  min-height: 58px;
+  border-radius: 6px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.resource-list strong {
+  display: block;
+  font-size: 34px;
+  line-height: 1.16;
+  font-weight: 900;
+}
+
+.resource-list small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
 .four-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
